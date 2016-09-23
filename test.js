@@ -1,0 +1,1 @@
+var mySchedule = {"title":document.newEvent.Title.value, }

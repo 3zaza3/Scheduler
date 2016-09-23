@@ -1,0 +1,107 @@
+
+body {
+	width: 22%;
+	/*background: #999;*/
+	height: 500px;
+	margin: 90px auto;
+	/*color: #fff;*/
+	border: 1px solid #009688;
+}
+
+.header {
+	background: #009688;
+	height: 100px;
+	color: #fff;
+	box-shadow: 0 2px 1px #999;
+}
+
+.event-header {
+	background: #009688;
+	color: #fff;
+	text-align: center;
+}
+
+.events {
+	margin-top: 15px;
+}
+
+h3 {
+	text-align: center;
+	margin-top: 30px;
+}
+
+
+.coffee:active{
+	border-left: 2px solid #FF5722;
+	/*padding: 2px;*/
+}
+
+.coffee a {
+	text-decoration: none;
+	color:#009688;
+}
+
+.upcoming {
+	padding: 5px;
+	color:#009688;
+}
+
+hr{
+	margin-top: 60px;
+	/*background: #009688;*/
+}
+
+#icons{
+	text-align: center;
+	/*margin-left: 0;*/
+	padding: 5px;
+	color:#009688;
+}
+
+#menu-icons {
+	font-size: 40px;
+}
+
+#menu-icons a{
+	color: #009688;
+}
+
+.date2 {
+	margin: 10px auto;
+}
+
+#text-label{
+	margin-top: 10px;
+}
+#new-event{
+	padding: 20px 30px;
+	color: #009688;
+	font-size: 12px;
+}
+
+.form-control, .checked {
+	color: #009688;
+}
+
+.type{
+	margin-left: 15px;
+}
+
+#submit-button{
+	margin-top: 20px;
+	background: #009688;
+	color: #fff;
+}
+
+#success {
+	text-align: center;
+	color: #009688;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 60px;
+	display: none;
+}
+
+#success-text {
+	font-size: 20px;
+}

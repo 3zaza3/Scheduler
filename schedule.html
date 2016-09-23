@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<title>Scheduler</title>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div class="container-fluid" id="new-event">
+	<div id="hidden">
+		<form name="newEvent" method="get" >
+		<div class="row">
+			<div class="form-group">
+				<!-- <form> -->
+					<input type="text" placeholder="Title" name="Title" class="form-control date2">
+					<input type="date" class="form-control date2" name="Date">
+				<!-- </form> -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group">
+				<!-- <form> -->
+					<div class="col-md-6">
+						<label for="start-time">Start Time</label>
+						<input type="time" class="form-control" id="start-time" name="StartTime">
+					</div>
+					<div class="col-md-6">
+						<label for="end-time">End Time</label>
+						<input type="time" class="form-control" id="end-time" name="EndTime">
+					</div>
+				<!-- </form> -->
+			</div>
+		</div>	
+
+			<div class="row">
+				<div class="form-group">
+				<!-- <form name="newEvent"> -->
+					<div class="pull-left type">
+						<label for="type" id="text-label">Type</label>
+						<select class="form-control" id="type" name="Type">
+							<option value="empty">------</option>
+							<option value="birthday">Birthday</option>
+							<option value="meeting">Meeting</option>
+							<option value="Flight">Flight</option>
+						</select>
+					</div>
+				<!-- </form> -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group">
+					<textarea name="Description" id="description" placeholder="Description" class="form-control date2" rows="3"></textarea>
+					<label for="alarm" >Add alarm</label>
+						<select class="form-control" id="alarm" name="Alarm">
+							<option value="none">-----</option>
+							<option value="no-alarm">No alarm</option>
+							<option value="on-time">On time</option>
+							<option value="five">5 minutes before</option>
+							<option value="ten">10 minutes before</option>
+							<option value="thirty">30 minutes before</option>
+							<option value="one">1 hour before</option>
+						</select>
+						<div class="text-center">
+							<!-- <a href="success.html"> --><input type="button" value="Create Event" class="btn" id="submit-button" onclick="return (validate());"><!-- </a> -->
+						</div>
+				</div>
+			</div>	
+			</form>
+
+		</div>
+		<div class="row" id="success">
+				<p><i class="fa fa-check-circle" aria-hidden="true"></i></p>
+				<p id="success-text">Event Successfully Added</p>
+		</div>
+		<div class="row" id="display">
+			
+		</div>	
+	</div>
+</body>
+</html>
